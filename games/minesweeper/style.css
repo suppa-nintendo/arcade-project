@@ -1,0 +1,168 @@
+body {
+  display: grid;
+  grid-template-rows: 80px 1fr;
+  grid-template-columns: 1fr 820px 1fr;
+  background-image: url("images/background-image.png");
+  background-size: cover;
+}
+.header-image {
+  grid-row: 1/2;
+  grid-column: 1/4;
+  height: 80px;
+  justify-self: center;
+}
+#start-reset-game {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+button {
+  box-sizing: border-box;
+  padding: 10px;
+  color: white;
+  background-color: #356bbd;
+  border: 2px solid #356bbd;
+  border-radius: 10px 0px 10px 0px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+button:hover {
+  border: 2px solid black;
+}
+button:active {
+  box-sizing: border-box;
+  padding: 10px;
+  color: white;
+  background-color: #356bbd;
+  border: 2px solid #356bbd;
+  border-radius: 10px 0px 10px 0px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+h4 {
+  text-decoration: underline;
+  margin-top: -1px;
+}
+
+.card {
+  border: 3px solid #356bbd;
+  background-color: #ffce00;
+  border-radius: 20px 0px 20px 0px;
+  padding: 10px;
+  margin: 10px 50px 10px 50px;
+}
+#information {
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+#current-game {
+  margin-top: 30px;
+}
+#game-over {
+  text-align: center;
+  font-size: 1.5rem;
+  display: none;
+}
+#scoreboard {
+  grid-row: 2/3;
+  grid-column: 3/4;
+}
+.plot {
+  height: 80px;
+  width: 80px;
+  background-color: oldlace;
+  border: 1px solid black;
+  box-sizing: border-box;
+  background-size: auto 80px;
+}
+#game-board {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  justify-self: center;
+  align-self: center;
+}
+#minefield {
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+  height: 800px;
+  border: 1px solid black;
+  background-image: url(images/voltorb-and-togepi.gif);
+  background-size: cover;
+}
+.bomb {
+  background-image: url(images/voltorb.png);
+  background-size: cover;
+}
+.number1 {
+  background-image: url(images/1.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+.number2 {
+  background-image: url(images/2.png);
+
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+.number3 {
+  background-image: url(images/3.png);
+
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+.number4 {
+  background-image: url(images/4.png);
+
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+.number5 {
+  background-image: url(images/5.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+.number6 {
+  background-image: url(images/6.png);
+
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+.number7 {
+  background-image: url(images/7.png);
+
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+.number8 {
+  background-image: url(images/8.png);
+
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+.plot:hover {
+  background-color: slategray;
+}
+.notRevealed {
+  background-image: url(images/pokeball.png);
+  background-size: cover;
+}
+.marked {
+  background-image: url(images/marked.png);
+  background-size: cover;
+}
+.footer-image {
+  width: 100px;
+}
+footer {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+

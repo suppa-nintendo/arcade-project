@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diglett Bopper</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <img class="header-image" src="images/Diglett-Bopper.png" />
+    <div id="score-box">
+      <div id="game-timer">Time Remaining: <span id="timer">0</span></div>
+      <div id="current-score">Score: 0</div>
+      <div id="high-score">Hi-Score: 0</div>
+      <div id="average-score">Avg-Score: 0</div>
+      <div id="accuracy">Accuracy: 0%</div>
+    </div>
+    <div id="game-board">
+      <div id="0" class="hill"></div>
+      <div id="1" class="hill"></div>
+      <div id="2" class="hill"></div>
+      <div id="3" class="hill"></div>
+      <div id="4" class="hill"></div>
+      <div id="5" class="hill"></div>
+      <div id="6" class="hill"></div>
+      <div id="7" class="hill"></div>
+      <div id="8" class="hill"></div>
+    </div>
+    <div id="controls">
+      <button id="start-button">START</button>
+      <button id="reset-button">RESET</button>
+    </div>
+    <section id="rules">
+      <h2>RULES:</h2>
+      <div class="mole-card">
+        <img src="images/mole.png" />
+        <p>Digletts are worth +1 point!</p>
+      </div>
+      <div class="mole-card">
+        <img src="images/bonus.png" />
+        </p>Dugtrio are worth +3 points!</p></div>
+      <div class="mole-card">
+        <p>Don't hit civilians!</p>
+        <img src="images/civilian.png" />
+        <p>Alolan Dugtrio are worth -3 points!</p>
+      </div>
+      <div>The START button will start a new game!</div>
+      <div>The RESET button will end the current game and reset your scores!</div>
+      <div>Easy Mode is slower, and will only display ONE Diglett at a time!</div>
+      <div>Hard Mode is faster, and will display up to TWO Diglett at a time!</div>
+    </section>
+    <section id="game-mode">
+      <h2>GAME MODE</h2>
+      <div><input type="radio" id="easy-mode" name="gameMode" value="easy" checked>
+        <label for="easy-mode">EASY</label>
+      </div>
+      <div><input type="radio" id="hard-mode" name="gameMode" value="hard">
+        <label for="hard-mode">HARD</label>
+      </div>
+    </section>
+    <section id="game-over">
+      <h2>GAME OVER!</h2>
+      <div id="end-score">Score: 0</div>
+      <div id="end-high-score">Hi-Score:</div>
+      <div id="end-average-score">Avg-Score:</div>
+      <div id="end-accuracy">Accuracy: 0%</div>
+    </section>
+    <footer><img class="footer-image" src="images/suppa_circle.jpg" /></footer>
+  </body>
+</html>

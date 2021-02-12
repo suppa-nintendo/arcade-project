@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voltorb Sweeper</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <img class="header-image" src="images/Voltorb-Sweeper.png" />
+    <section id="game-board">
+      <div id="minefield"></div>
+    </section>
+    <section id="scoreboard">
+      <div id="current-game" class="card">
+        <h4>Current Game:</h4>
+        <p>Marks Remaining: <span id="marks-remaining">10</span></p>
+        <p>Time Remaining: <span id="time-remaining">0</span></p>
+      </div>
+      <div id="scores" class="card">
+        <h4>Scoreboard:</h4>
+        <p>Wins: <span id="wins">0</span></p>
+        <p>Losses: <span id="losses">0</span></p>
+      </div>
+      <div id="game-over" class="card">
+        <h2 id="win-lose"></h4>
+        <p id="final-score"></p>
+      </div>
+    </section>
+    <section id="information">
+      <div id="start-reset-game" class="card">
+        <button id="new-game-button">NEW GAME</button>
+      </div>
+      <div id="difficulty" class="card">
+        <h4>Difficulty Modifiers:</h4>
+        <div id="bomb-amount">
+          <p>Select Voltorb Density</p>
+          <div>
+            <input type="radio" id="percent-10" name="bombDensity" value="10" />
+            <label for="percent-10">10% Voltorbs</label>
+          </div>
+          <div>
+            <input type="radio" id="percent-15" name="bombDensity" value="15" checked />
+            <label for="percent-15">15% Voltorbs</label>
+          </div>
+          <div>
+            <input type="radio" id="percent-25" name="bombDensity" value="25" />
+            <label for="percent-25">25% Voltorbs</label>
+          </div>
+        </div>
+        <div id="board-size">
+          <p>Select Board Size</p>
+          <div>
+            <input type="radio" id="board-10x10" name="boardSize" value="10"/>
+            <label for="board-10x10">10 x 10 (100 plots)</label>
+          </div>
+          <div>
+            <input type="radio" id="board-15x15" name="boardSize" value="16" />
+            <label for="board-15x15">16 x 16 (256 plots)</label>
+          </div>
+          <div>
+            <input type="radio" id="board-20x20" name="boardSize" value="20" checked />
+            <label for="board-20x20">20 x 20 (400 plots)</label>
+          </div>
+        </div>
+      </div>
+      <div id="controls" class="card">
+        <h4>Controls:</h4>
+        <p>LEFT-CLICK to reveal plots</p>
+        <p>RIGHT CLICK to mark plots</p>
+        <p>NEW GAME will reset the current game and apply the selected modifiers (this will count as a loss if you've started a game)</p>
+      </div>
+    </section>
+    <footer><img class="footer-image" src="images/suppa_circle.jpg" /></footer>
+  </body>
+</html>

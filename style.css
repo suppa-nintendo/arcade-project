@@ -1,0 +1,37 @@
+body {
+  text-align: center;
+  margin-top: 200px;
+  background-image: url("images/landscape.png");
+  background-size: cover;
+}
+#links {
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.thumbnail {
+  height: 150px;
+  width: 150px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.card {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.game-title {
+  height: 40px;
+}
+#title-image {
+  width: 400px;
+}
+.footer-image {
+  width: 100px;
+}
+footer {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
